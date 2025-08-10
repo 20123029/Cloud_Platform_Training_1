@@ -1,0 +1,116 @@
+.CreatePostPage {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f4f6f8;
+    min-height: calc(100vh - 60px);
+}
+
+.PostContainer {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.PostContainer h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.inputGroup {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputGroup label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.PostContainer input,
+.PostContainer textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.PostContainer input:focus,
+.PostContainer textarea:focus {
+    border-color: #007bff;
+}
+
+.PostContainer textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.postButton,
+.previewButton {
+    flex-grow: 1;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.postButton {
+    background-color: #007bff;
+}
+
+.postButton:hover {
+    background-color: #0056b3;
+}
+
+.previewButton {
+    background-color: #6c757d;
+}
+
+.previewButton:hover {
+    background-color: #5a6268;
+}
+
+.markdownPreview {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.markdownPreview h2 {
+    font-size: 20px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.previewContent {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
